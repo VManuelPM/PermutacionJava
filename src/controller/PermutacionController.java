@@ -18,7 +18,7 @@ public class PermutacionController {
     public List entraPemutacion(List valores, int permutaciones){
         valoresNuevos = new ArrayList<>();
         int tamano = valores.size()-1;
-        System.out.println(tamano);
+ 
         for(int i=0; i<permutaciones; i++){
             for(int j=0;j<valores.size(); j++){
                
@@ -50,7 +50,6 @@ public class PermutacionController {
                 }
                 
                 if(j==tamano){
-                     System.out.println("entre");
                      valores.clear();
                      valores.addAll(valoresNuevos);
                 }
